@@ -97,10 +97,10 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
             // convert the string to JSON object for better reading
             val resultJson = JSONObject(result)
             // Initialize prediction text
-            var prediction ="Today's prediction nn"
-            prediction += this.sunSign+"n"
+            var prediction ="Today's prediction \n\n"
+            prediction += this.sunSign+"\n"
             // Update text with various fields from response
-            prediction += resultJson.getString("date_range")+"nn"
+            prediction += resultJson.getString("date_range")+"\n\n"
             prediction += resultJson.getString("description")
             //Update the prediction to the view
             setText(this.resultView,prediction)
