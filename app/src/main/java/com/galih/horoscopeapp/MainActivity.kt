@@ -13,6 +13,13 @@ import java.io.InputStreamReader
 import java.net.HttpURLConnection
 import java.net.URL
 
+/*
+Kamis, 15 Juli 2022
+10119175
+Mochamad Galih Prasetya
+IF5
+*/
+
 class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
     var sunSign = "Aries"
     var resultView: TextView? = null
